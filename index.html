@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-light bg-light">
+  <nav class="navbar navbar-light bg-light mb-3">
     <a class="navbar-brand" href="#">
       <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-check-circle" fill="currentColor"
         xmlns="http://www.w3.org/2000/svg">
@@ -25,6 +25,21 @@
       To-Do App
     </a>
   </nav>
+  <div class="container">
+    <div class="row justify-content-center ">
+      <div class="col-4">
+        To-Do App Below
+        <form class="form-row">
+          <div class="col-auto ">
+            <label for="todo-item" class="sr-only"> To-Do Item </label>
+            <input type="password" class="form-control" id="todo-item" placeholder="e.g. Eggs">
+          </div>
+          <button type="button" class="btn btn-primary mb-2">Add Item</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
