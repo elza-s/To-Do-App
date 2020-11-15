@@ -9,6 +9,11 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <style>
+    div.container {
+      max-width: 600px;
+    }
+  </style>
 
   <title>To-Do App</title>
 </head>
@@ -27,17 +32,19 @@
   </nav>
   <div class="container">
     <div class="row justify-content-center ">
-      <div class="col-3 mb-3">
+      <div class="col mb-3">
         To-Do App Below
+        <form class="form-row">
+          <div class="col">
+            <label for="todo-item" class="sr-only"> To-Do Item </label>
+            <input type="form-control" class="form-control" id="todo-item" placeholder="e.g. Eggs">
+          </div>
+          <button type="button" class="btn btn-primary mb-2" onclick="addItem()">Add
+            Item</button>
+        </form>
+
+        <ul id="todo-list" class="list-unstyled mt-3"></ul>
       </div>
-      <form class="form-row col-10">
-        <div class="col-8">
-          <label for="todo-item" class="sr-only"> To-Do Item </label>
-          <input type="password" class="form-control" id="todo-item" placeholder="e.g. Eggs">
-        </div>
-        <button type="button" class="btn btn-primary mb-2 col-3" onclick="sendAlert('That is Awesome')">Add
-          Item</button>
-      </form>
 
     </div>
   </div>
