@@ -19,9 +19,11 @@ function addToList(message) {
   list.appendChild(item);
 }
 
-var crossOut = document.querySelector("#todo-list");
-crossOut.addEventListener("click", strike);
 
-function strike(event) {
-  var strikeOut = document.createElement('del');
+var todoList = document.querySelector(".todoList")
+todoList.addEventListener('click', deleteCheck)
+function deleteCheck(e) {
+  var item = e.target;
+
+  item.style.textDecoration = 'line-through'
 }
