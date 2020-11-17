@@ -19,6 +19,12 @@ function addToList(message) {
   list.appendChild(item);
 }
 
+// var itemCheck = document.querySelector("li");
+// debugger
+// function strike(event) {
+//   var strikeOut = document.createElement('del');
+// }
+// itemCheck.addEventListener("click", strike);
 
 var todoList = document.querySelector(".todoList")
 todoList.addEventListener('click', deleteCheck)
@@ -26,4 +32,4 @@ function deleteCheck(e) {
   var item = e.target;
 
   item.style.textDecoration = 'line-through'
-}
+} 
